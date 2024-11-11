@@ -14,6 +14,34 @@
             "problemMatcher": "$msCompile"
         },
         {
+            "label": "clean",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "clean",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "delete-publish",
+            "command": "if (Test-Path -Path .\\bin\\publish){ Remove-Item .\\bin\\publish -Recurse }",
+            "type": "shell",
+            "args": [
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "restore",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "restore",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
             "label": "publish",
             "command": "dotnet",
             "type": "process",
@@ -25,9 +53,28 @@
                 "-c",
                 "release",
                 "-o",
-                ".\\publish"
+                ".\\bin\\publish"
             ],
             "problemMatcher": "$msCompile"
-        }    
+        },
+        {
+            "label": "delete-config-files-from-publish",
+            "command": "if (Test-Path -Path .\\bin\\publish\\web.config){ Remove-Item .\\bin\\publish\\web.config }; if (Test-Path -Path .\\bin\\publish\\appsettings.*){ Remove-Item .\\bin\\publish\\appsettings.* };  if (Test-Path -Path .\\bin\\publish\\business-rules-settings){ Remove-Item .\\bin\\publish\\business-rules-settings -Recurse };",
+            "type": "shell",
+            "args": [
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "complete_publish",
+            "dependsOn": [
+                "complete_clean",
+                "restore",
+                "publish",
+                "delete-config-files-from-publish"
+            ],
+            "dependsOrder": "sequence",
+            "problemMatcher": []
+        },
     ]
 }

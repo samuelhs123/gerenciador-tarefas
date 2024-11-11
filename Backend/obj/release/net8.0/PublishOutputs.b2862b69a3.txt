@@ -1,4 +1,7 @@
 C:\DSV\GerenciadorTarefas\Backend\publish\GerenciadorTarefas.exe
+C:\DSV\GerenciadorTarefas\Backend\publish\publish\publish\publish\publish\publish\publish\web.config
+C:\DSV\GerenciadorTarefas\Backend\publish\publish\publish\publish\publish\publish\web.config
+C:\DSV\GerenciadorTarefas\Backend\publish\publish\publish\publish\publish\web.config
 C:\DSV\GerenciadorTarefas\Backend\publish\publish\publish\publish\web.config
 C:\DSV\GerenciadorTarefas\Backend\publish\publish\publish\web.config
 C:\DSV\GerenciadorTarefas\Backend\publish\publish\web.config
@@ -17,6 +20,18 @@ C:\DSV\GerenciadorTarefas\Backend\publish\publish\publish\publish\appsettings.De
 C:\DSV\GerenciadorTarefas\Backend\publish\publish\publish\publish\appsettings.json
 C:\DSV\GerenciadorTarefas\Backend\publish\publish\publish\publish\GerenciadorTarefas.deps.json
 C:\DSV\GerenciadorTarefas\Backend\publish\publish\publish\publish\GerenciadorTarefas.runtimeconfig.json
+C:\DSV\GerenciadorTarefas\Backend\publish\publish\publish\publish\publish\appsettings.Development.json
+C:\DSV\GerenciadorTarefas\Backend\publish\publish\publish\publish\publish\appsettings.json
+C:\DSV\GerenciadorTarefas\Backend\publish\publish\publish\publish\publish\GerenciadorTarefas.deps.json
+C:\DSV\GerenciadorTarefas\Backend\publish\publish\publish\publish\publish\GerenciadorTarefas.runtimeconfig.json
+C:\DSV\GerenciadorTarefas\Backend\publish\publish\publish\publish\publish\publish\appsettings.Development.json
+C:\DSV\GerenciadorTarefas\Backend\publish\publish\publish\publish\publish\publish\appsettings.json
+C:\DSV\GerenciadorTarefas\Backend\publish\publish\publish\publish\publish\publish\GerenciadorTarefas.deps.json
+C:\DSV\GerenciadorTarefas\Backend\publish\publish\publish\publish\publish\publish\GerenciadorTarefas.runtimeconfig.json
+C:\DSV\GerenciadorTarefas\Backend\publish\publish\publish\publish\publish\publish\publish\appsettings.Development.json
+C:\DSV\GerenciadorTarefas\Backend\publish\publish\publish\publish\publish\publish\publish\appsettings.json
+C:\DSV\GerenciadorTarefas\Backend\publish\publish\publish\publish\publish\publish\publish\GerenciadorTarefas.deps.json
+C:\DSV\GerenciadorTarefas\Backend\publish\publish\publish\publish\publish\publish\publish\GerenciadorTarefas.runtimeconfig.json
 C:\DSV\GerenciadorTarefas\Backend\publish\GerenciadorTarefas.dll
 C:\DSV\GerenciadorTarefas\Backend\publish\GerenciadorTarefas.deps.json
 C:\DSV\GerenciadorTarefas\Backend\publish\GerenciadorTarefas.runtimeconfig.json

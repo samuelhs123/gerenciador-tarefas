@@ -72,7 +72,9 @@ public partial class GerenciadorTarefasService
     {
         var respValidacao = ValidarTarefa(tarefa);
         if (!respValidacao.Sucesso)
+        {
             return respValidacao;
+        }
 
         await _gerenciadorTarefasDbContext.AddAsync(tarefa);
         await _gerenciadorTarefasDbContext.SaveChangesAsync(true);
@@ -81,7 +83,6 @@ public partial class GerenciadorTarefasService
 
     internal async Task<RespostaAPI> DeleteTarefa(int id)
     {
-        throw new Exception("ksjkldjsakl");
         var tarefa = await _gerenciadorTarefasDbContext.Tarefas.FindAsync(id);
         if (tarefa == null)
         { 
@@ -117,7 +118,9 @@ public partial class GerenciadorTarefasService
 
         var respValidacao = ValidarTarefa(tarefa);
         if (!respValidacao.Sucesso)
+        {
             return respValidacao;
+        }
 
         _gerenciadorTarefasDbContext.Attach(oldTarefa);
         _gerenciadorTarefasDbContext.Entry(oldTarefa).CurrentValues.SetValues(tarefa);
@@ -145,7 +148,7 @@ public partial class GerenciadorTarefasService
                 return new RespostaAPI(false, "A data prevista para conclusão da tarefa deve ser informada");
             }
 
-            if (tarefa.DataConclusaoPrevista.Value < DateTime.Now)
+            if (tarefa.DataConclusaoPrevista.Value.Date < DateTime.Today)
             {
                 return new RespostaAPI(false, "A data prevista para conclusão da tarefa não deve ser anterior à data atual");
             }
@@ -157,7 +160,7 @@ public partial class GerenciadorTarefasService
                 return new RespostaAPI(false, "A data efetiva de conclusão da tarefa deve ser informada");
             }
 
-            if (tarefa.DataConclusaoEfetiva.Value > DateTime.Now)
+            if (tarefa.DataConclusaoEfetiva.Value.Date > DateTime.Today)
             {
                 return new RespostaAPI(false, "A data efetiva de conclusão da tarefa não deve ser posterior à data atual");
             }
