@@ -1,0 +1,32 @@
+<h1 style="text-align:center; margin-top: 20px; margin-bottom: 50px;">Incluir Tarefa</h1>
+
+<div style="display: flex;">
+  <span style="width: 25%;"></span>
+
+  <div style=" display: flex; flex-direction: column; text-align: center; width: 50%;">
+    <mat-form-field appearance="outline" floatLabel="always">
+      <mat-label>Título:</mat-label>
+      <input matInput placeholder="Título" [(ngModel)]="tarefa.titulo" required maxlength="50">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" floatLabel="always">
+      <mat-label>Descrição:</mat-label>
+      <textarea matInput placeholder="Descrição" [(ngModel)]="tarefa.descricao" rows="10" cols="20" required maxlength="500"></textarea>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" floatLabel="always" style="width:200px;">
+      <mat-label>Data prevista para conclusão</mat-label>
+      <input matInput textMask="dd/MM/yyyy" [matDatepicker]="picker" [(ngModel)]="tarefa.dataConclusaoPrevista">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <div style="margin-top: 20px;">
+      <button mat-button color="primary" (click)="salvar()">{{(tarefa.id > 0 ? 'Atualizar' : 'Incluir')}}</button>
+      <button mat-button style="margin-left: 80px;" (click)="reset()">Cancelar</button>
+    </div>
+  </div>
+
+  <span style="width: 25%;"></span>
+</div>
+

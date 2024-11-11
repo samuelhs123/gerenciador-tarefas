@@ -1,0 +1,53 @@
+.mat-button-toggle {
+  background-color: lightgray;
+} 
+
+.mat-button-toggle-checked {
+  background-color: lightgreen;
+} 
+
+table {
+    width: 100%;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    width: 50px;
+  }
+
+  .tooltip-big {
+    font-size: 14px;
+  }
+
+  .mat-column-titulo {
+    width: 20%;
+    font-weight: bold;
+  }
+
+  .mat-column-descricao {
+    width: 42%;
+  }
+
+  .mat-column-dataConclusaoPrevista {
+    width: 10%;
+    text-align: center;
+  }
+
+  .mat-column-situacao {
+    width: 8%;
+    text-align: center;
+  }
+
+  .mat-column-dataConclusaoEfetiva {
+    width: 10%;
+    text-align: center;
+  }
+
+  .mat-column-opcoes {
+    width: 10%;
+  }
+
+  th.mat-header-cell {
+    text-align: center !important;
+  }
